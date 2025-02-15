@@ -3,14 +3,14 @@ import argparse
 
 # Function to get output from user prompt
 def get_output(prompt):
-    url = "http://localhost:5000/get-output"
+    url = "https://gen-mcq.onrender.com/get-output"
     params = {"prompt": prompt}
     response = requests.get(url, params=params)
     return response.json()
 
 # Function to generate MCQs
 def generate_mcq(text, number_of_questions, level, image=None):
-    url = "http://localhost:5000/generate-mcq"
+    url = "https://gen-mcq.onrender.com/generate-mcq"
     params = {
         "text": text,
         "number_of_questions": number_of_questions,
@@ -23,7 +23,7 @@ def generate_mcq(text, number_of_questions, level, image=None):
 
 # Function to summarize text
 def summarize(text, image=None):
-    url = "http://localhost:5000/summarize"
+    url = "https://gen-mcq.onrender.com/summarize"
     params = {"text": text}
     if image:
         params["image"] = image
@@ -32,7 +32,7 @@ def summarize(text, image=None):
 
 # Function to evaluate answer
 def evaluate_answer(question, answer, max_marks):
-    url = "http://localhost:5000/evaluate-answer"
+    url = "https://gen-mcq.onrender.com/evaluate-answer"
     params = {"question": question, "answer": answer, "max_marks": max_marks}
     response = requests.get(url, params=params)
     return response.json()
