@@ -56,13 +56,13 @@ def main():
     # Subparser for summarize command
     summarize_parser = subparsers.add_parser("summarize", help="Summarize text")
     summarize_parser.add_argument("text", type=str, help="Text to be summarized")
-    summarize_parser.add.argument("--image", type=str, help="Image associated with the text", required=False)
+    summarize_parser.add_argument("--image", type=str, help="Image associated with the text", required=False)
 
     # Subparser for evaluate-answer command
     evaluate_answer_parser = subparsers.add_parser("evaluate-answer", help="Evaluate answer to a question")
-    evaluate_answer_parser.add.argument("question", type=str, help="The question text")
-    evaluate_answer_parser.add.argument("answer", type=str, help="The answer text")
-    evaluate_answer_parser.add.argument("max_marks", type=int, help="The maximum marks for the question")
+    evaluate_answer_parser.add_argument("question", type=str, help="The question text")
+    evaluate_answer_parser.add_argument("answer", type=str, help="The answer text")
+    evaluate_answer_parser.add_argument("max_marks", type=int, help="The maximum marks for the question")
 
     args = parser.parse_args()
 
