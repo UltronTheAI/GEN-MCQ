@@ -33,7 +33,7 @@ const schema = {
       },
       answer: {
         type: SchemaType.STRING,
-        description: "Correct answer",
+        description: "Correct answer, full correct option which is used in option",
         nullable: false,
       },
       explanation: {
