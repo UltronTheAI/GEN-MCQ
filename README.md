@@ -2,6 +2,8 @@
 
 This is a Node.js backend application for generating MCQs (Multiple Choice Questions), summarizing text, evaluating answers, and more using Gemini AI. The backend is built using Express.js and leverages GoogleGenerativeAI for AI-driven content generation and evaluation.
 
+Live: https://gen-mcq.onrender.com/
+
 ## Features
 
 - **Get Output from User Prompt**: Generate content based on a user-provided prompt.
