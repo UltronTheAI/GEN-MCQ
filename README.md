@@ -142,7 +142,7 @@ Use the provided Python script (`test_backend.py`) to test the endpoints.
 
 - **Evaluate Answer:**
     ```bash
-    python test_backend.py evaluate-answer "What is the capital of France?" "Paris" 10
+    python test_backend.py evaluate-answer "What is the capital of France?" "Paris" 1
     ```
 
 ## Contributing
