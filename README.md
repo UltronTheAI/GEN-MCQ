@@ -23,8 +23,8 @@ Live: https://gen-mcq.onrender.com/
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/nodejs-mcq-app.git
-    cd nodejs-mcq-app
+    git clone https://github.com/UltronTheAI/GEN-MCQ.git
+    cd GEN-MCQ
     ```
 
 2. Install dependencies:
